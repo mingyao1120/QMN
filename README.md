@@ -72,9 +72,10 @@ This will guide you in preparing the required dependencies and configurations.
 
 ---
 
-## Running Experiments  
+## Running Experiments
 To conduct experiments on the four datasets (Charades-STA, ActivityNet Captions, TACoS, and EgoVLP), execute the corresponding bash scripts provided in the repository.  
 Before running the test, please create a new folder for the error path to store the results.
+
 ---
 
 ## Citation  
