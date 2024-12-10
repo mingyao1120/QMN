@@ -40,9 +40,7 @@ Ensure you modify the `config` JSON files to set the correct `feature_path` for 
 ---
 
 ## Environment Setup  
-Follow the environment setup instructions in:  
-**"Counterfactual Cross-modality Reasoning for Weakly Supervised Video Moment Localization"** (ACM MM 2023).  
-
+Follow the environment setup instructions in: **CPL: Weakly Supervised Temporal Sentence Grounding with Gaussian-based Contrastive Proposal Learning** [CPL](https://github.com/minghangz/cpl) .
 This will guide you in preparing the required dependencies and configurations.  
 
 ---
