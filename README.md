@@ -1,6 +1,4 @@
-以下是你的项目 README 文件内容：  
 
----
 
 # Query-aware Multi-scale Proposal Network  
 This repository contains the code and resources for the paper:  
