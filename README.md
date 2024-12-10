@@ -2,7 +2,7 @@
 
 # Query-aware Multi-scale Proposal Network for Weakly Supervised Temporal Sentence Grounding in Videos  
 This repository contains the code and resources for the paper:  
-**"Query-aware Multi-scale Proposal Network for Weakly Supervised Temporal Sentence Grounding in Videos"** (Knowledge-Based Systems, 2024).  
+"Query-aware Multi-scale Proposal Network for Weakly Supervised Temporal Sentence Grounding in Videos" (Knowledge-Based Systems, 2024).  
 
 ![Model Overview](imgs/method.png)  
 
@@ -18,7 +18,35 @@ This repository contains the code and resources for the paper:
 ## Overview  
 This project introduces a novel Query-aware Multi-scale Proposal Network, designed for weakly supervised temporal sentence grounding in videos. The model effectively leverages query-aware multi-scale proposals to improve temporal grounding accuracy under weak supervision.  
 
-For a visual overview of the model, see `imgs/method.png`.  
+For a visual overview of the model, see `imgs/method.png`. 
+
+### Performance Comparison on the Charades-STA Test Set
+
+The table below presents the performance comparison on the Charades-STA test set. R@𝑛 represents the recall evaluation result of the time series timestamps of the first 𝑛 predictions. Bold indicates optimal performance, and underline indicates suboptimal performance. Methods using additional annotations or large-scale pre-trained models are marked with †.
+
+| Method   | R@1, IoU=m               | R@5, IoU=m               |
+|----------|--------------------------|--------------------------|
+|          | m=0.3 | m=0.5 | m=0.7    | m=0.3 | m=0.5 | m=0.7    |
+| TGA [5]  | 32.14  | 19.94  |  8.84   | 86.58  | 65.52  | 33.51   |
+| WSRA [36]| 50.13  | 31.20  | 11.01   | 86.75  | 70.50  | 39.02   |
+| CCL [9]  | -      | 33.21  | 15.68   | -      | 73.50  | 41.87   |
+| VCA [11] | 58.58  | 38.13  | 19.57   | **98.08** | 78.75  | 37.75   |
+| LCNet [12]| 59.60 | 39.19  | 18.87   | 94.78  | 80.56  | 45.24   |
+| RTBPN [52]| 60.04 | 32.36  | 13.24   | 97.48  | 71.85  | 41.18   |
+| CVTRN [39]| 64.88 | 39.42  | 17.80   | -      | -      | -       |
+| CNM [15] | 60.39  | 35.43  | 15.45   | -      | -      | -       |
+| CPL [17] | 65.99  | 49.05  | 22.61   | 96.99  | 84.71  | 52.37   |
+| CCR [4]  | 68.59  | 50.79  | 23.75   | 96.85  | 84.48  | 52.44   |
+| CCR* [4] | 69.25  | 48.67  | 21.41   | 97.59  | 84.42  | 50.73   |
+| CRM† [10]| 53.66  | 34.76  | 16.37   | -      | -      | -       |
+| IRON† [18]| 70.71 | 51.84  | 25.01   | 98.96  | 86.80  | 54.99   |
+| SCANet† [19]| 68.04 | 50.85  | 24.07   | 98.24  | 86.32  | 53.28   |
+| QMN      | **69.35** | **52.66** | **25.17** | **97.91** | **89.65** | **54.37** |
+
+**Notes:**
+- Bold values represent the best performance in each column.
+- Methods marked with † utilize additional annotations or large-scale pre-trained models.
+
 
 ---
 
