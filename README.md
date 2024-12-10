@@ -24,9 +24,8 @@ For a visual overview of the model, see `imgs/method.png`.
 
 The table below presents the performance comparison on the Charades-STA test set. R@𝑛 represents the recall evaluation result of the time series timestamps of the first 𝑛 predictions. Bold indicates optimal performance, and underline indicates suboptimal performance. Methods using additional annotations or large-scale pre-trained models are marked with †.
 
-| Method   | R@1, IoU=m               | R@5, IoU=m               |
+| Method   | R@1, IoU=0.3 | R@1, IoU=0.5 | R@1, IoU=0.7    | R@1, IoU=0.3 | R@1, IoU=0.5 | R@1, IoU=0.7    |
 |----------|--------------------------|--------------------------|
-|          | m=0.3 | m=0.5 | m=0.7    | m=0.3 | m=0.5 | m=0.7    |
 | TGA [5]  | 32.14  | 19.94  |  8.84   | 86.58  | 65.52  | 33.51   |
 | WSRA [36]| 50.13  | 31.20  | 11.01   | 86.75  | 70.50  | 39.02   |
 | CCL [9]  | -      | 33.21  | 15.68   | -      | 73.50  | 41.87   |
