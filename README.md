@@ -50,6 +50,7 @@ The table below presents the performance comparison on the Charades-STA test set
 ---
 
 ## Data Preparation  
+If any dataset link becomes invalid, you can refer to [Hugging Face](https://huggingface.co/Lonicerin) for alternative resources.
 ### Charades-STA and ActivityNet Captions  
 - **Charades-STA Features**: Use the features provided by [LGI](https://github.com/JonghwanMun/LGI4temporalgrounding). See the [Charades-STA repository](https://github.com/JonghwanMun/LGI4temporalgrounding) for details.  
 - **ActivityNet Captions Features**: Download hdf5 features from [ActivityNet Captions](http://activity-net.org/challenges/2016/download.html).  
